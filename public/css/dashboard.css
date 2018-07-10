@@ -1,0 +1,238 @@
+body {
+    font-size: .875rem;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px; /* Height of navbar */
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+}
+
+.sidebar .nav-link.active {
+    color: #ed1c24;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-dark {
+    background-color: #ed1c24;
+}
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(237, 28, 36, 0.8);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/*
+ * Utilities
+ */
+
+.table-responsive {
+    overflow: visible;
+}
+
+.card-shadow {
+    box-shadow: 0 2px 5px 0 #0000002b;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.sort-by {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    color: #6c757d;
+}
+
+.sort-handle {
+    cursor: move !important;
+}
+
+.search-icon {
+    padding: .85rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+}
+.navbar .hidden {
+    display:none;
+}
+
+@media (max-width: 768px) {
+    .navbar .col {
+        padding-right: 0px;
+    }
+    .navbar-brand {
+        -webkit-box-flex: unset;
+        flex: unset;
+        max-width: unset;
+    }
+    .navbar .hidden {
+        display: block;
+    }
+}
+
+.card-placeholder {
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(165, 184, 192, 0.36);
+    border: 1px #576972 dot-dash;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-deck .card {
+    display: inline-flex;
+    max-height: 225px;
+    min-height: 200px;
+    min-width: 365px;
+    max-width: 415px;
+}
+
+.card-deck .card .card-img-left {
+    height: unset;
+    border-radius: 3px 0 0 3px;
+}
+
+@media (max-width: 768px) {
+    .card-deck .card {
+        min-width: 230px;
+    }
+}
+
+.card-deck-link {
+    color:inherit;
+}
+.card-deck-link:hover,.card-deck-link:visited {
+    text-decoration: none;
+    color:inherit;
+}
+
+.card-deck .card .card-body .flex-column {
+    max-height: 200px;
+}
+
+.card-img-left {
+    height: 100%;
+    border-radius: 3px 0 0 3px;
+    max-height: 200px;
+}
+
+.footer-text {
+    text-shadow: 0 0.05rem 0.1rem rgba(55, 55, 55, 0.5);
+    color: #8c8c8c;
+}
+
+.footer-text a {
+    color: #afafaf;
+}
+
+.main-photo .box{
+    background-color: #0000005e;
+    border-radius: 10px;
+    text-shadow: 0 0.05rem 0.1rem rgba(55, 55, 55, 0.5);
+    color: #fff;
+    min-width: 275px;
+}
+
+.credit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width:unset;
+}
+
+#flash-message {
+    display: none;
+}
+
+.feather-big {
+    vertical-align: unset;
+    width:20px;
+    height: 20px;
+}
